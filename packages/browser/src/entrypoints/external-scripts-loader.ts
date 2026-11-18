@@ -2,6 +2,7 @@ import type { PostHog } from '../posthog-core'
 import { document } from '@posthog/browser-common/utils/globals'
 import { assignableWindow, PostHogExtensionKind } from '../utils/globals'
 import { createLogger } from '@posthog/browser-common/utils/logger'
+import { getToolbarCacheBucket } from '@posthog/browser-common/toolbar'
 
 const logger = createLogger('[ExternalScriptsLoader]')
 
@@ -127,12 +128,7 @@ const legacyScriptUrl = (posthog: PostHog, kind: PostHogExtensionKind): string =
     let scriptPath = `/static/${kind}.js?v=${posthog.version}`
 
     if (kind === 'toolbar') {
-        // toolbar.js has a 24-hour CDN TTL but contains a rotating token valid for
-        // only 5 minutes. Bust the cache on a 5-minute boundary so the browser always
-        // fetches a fresh copy with a valid token.
-        const fiveMinutesInMillis = 5 * 60 * 1000
-        const timestampToNearestFiveMinutes = Math.floor(Date.now() / fiveMinutesInMillis) * fiveMinutesInMillis
-        scriptPath = `${scriptPath}&t=${timestampToNearestFiveMinutes}`
+        scriptPath = `${scriptPath}&t=${getToolbarCacheBucket()}`
     }
 
     return posthog.requestRouter.endpointFor('assets', scriptPath)
