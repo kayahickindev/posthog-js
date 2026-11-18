@@ -15,6 +15,7 @@ import type { TracingHeadersOptions } from '../products/tracing-headers/tracing-
 import type { ErrorTrackingConfiguration } from '../products/error-tracking/error-tracking-options'
 import type { ToolbarConfiguration } from '../products/toolbar/toolbar-options'
 import type { ConversationsConfiguration } from '../products/conversations/conversations-options'
+import type { SessionRecordingConfiguration } from '../products/session-recording/session-recording-options'
 import type { AnalyticsOptions, PersonProfileMode } from '../products/analytics/analytics-options'
 
 import type {
@@ -138,6 +139,8 @@ export interface PostHogOptions {
     toolbar?: ToolbarConfiguration
     /** Acquire conversations when remote configuration enables them, or during initialization when configured explicitly. */
     conversations?: ConversationsConfiguration
+    /** Acquire session recording from saved/fresh enablement signals, or during initialization when configured explicitly. */
+    sessionRecording?: SessionRecordingConfiguration
     /** Install extensions before the factory resolves. Explicit instances take precedence over automatic product options. */
     extensions?: readonly Extension[]
 }
@@ -162,6 +165,7 @@ export type CorePostHogOptions = Omit<
     | 'errorTracking'
     | 'toolbar'
     | 'conversations'
+    | 'sessionRecording'
 >
 
 /** Capture V1's terminal verdict for one reported event. */
