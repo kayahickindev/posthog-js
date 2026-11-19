@@ -46615,10 +46615,12 @@
                                 "values": [
                                     [
                                         "compat-enabled",
-                                        "compat-variant"
+                                        "compat-variant",
+                                        "compat-replay-variant"
                                     ],
                                     {
                                         "compat-enabled": true,
+                                        "compat-replay-variant": "red",
                                         "compat-variant": "blue"
                                     },
                                     {
@@ -46633,10 +46635,12 @@
                                 "values": [
                                     [
                                         "compat-enabled",
-                                        "compat-variant"
+                                        "compat-variant",
+                                        "compat-replay-variant"
                                     ],
                                     {
                                         "compat-enabled": true,
+                                        "compat-replay-variant": "red",
                                         "compat-variant": "blue"
                                     },
                                     {
@@ -46651,10 +46655,12 @@
                                 "values": [
                                     [
                                         "compat-enabled",
-                                        "compat-variant"
+                                        "compat-variant",
+                                        "compat-replay-variant"
                                     ],
                                     {
                                         "compat-enabled": true,
+                                        "compat-replay-variant": "red",
                                         "compat-variant": "blue"
                                     },
                                     {
@@ -46669,10 +46675,12 @@
                                 "values": [
                                     [
                                         "compat-enabled",
-                                        "compat-variant"
+                                        "compat-variant",
+                                        "compat-replay-variant"
                                     ],
                                     {
                                         "compat-enabled": true,
+                                        "compat-replay-variant": "red",
                                         "compat-variant": "blue"
                                     },
                                     {
@@ -46687,10 +46695,12 @@
                                 "values": [
                                     [
                                         "compat-enabled",
-                                        "compat-variant"
+                                        "compat-variant",
+                                        "compat-replay-variant"
                                     ],
                                     {
                                         "compat-enabled": true,
+                                        "compat-replay-variant": "red",
                                         "compat-variant": "blue"
                                     }
                                 ]
@@ -46701,6 +46711,106 @@
                                 "phase": "ready",
                                 "values": [
                                     []
+                                ]
+                            },
+                            {
+                                "callback": "feature-flags",
+                                "originPhase": "before-init",
+                                "phase": "ready",
+                                "values": [
+                                    [
+                                        "compat-enabled",
+                                        "compat-variant",
+                                        "compat-replay-variant"
+                                    ],
+                                    {
+                                        "compat-enabled": true,
+                                        "compat-replay-variant": "blue",
+                                        "compat-variant": "blue"
+                                    },
+                                    {
+                                        "errorsLoading": false
+                                    }
+                                ]
+                            },
+                            {
+                                "callback": "feature-flags",
+                                "originPhase": "loaded",
+                                "phase": "ready",
+                                "values": [
+                                    [
+                                        "compat-enabled",
+                                        "compat-variant",
+                                        "compat-replay-variant"
+                                    ],
+                                    {
+                                        "compat-enabled": true,
+                                        "compat-replay-variant": "blue",
+                                        "compat-variant": "blue"
+                                    },
+                                    {
+                                        "errorsLoading": false
+                                    }
+                                ]
+                            },
+                            {
+                                "callback": "feature-flags",
+                                "originPhase": "init-return",
+                                "phase": "ready",
+                                "values": [
+                                    [
+                                        "compat-enabled",
+                                        "compat-variant",
+                                        "compat-replay-variant"
+                                    ],
+                                    {
+                                        "compat-enabled": true,
+                                        "compat-replay-variant": "blue",
+                                        "compat-variant": "blue"
+                                    },
+                                    {
+                                        "errorsLoading": false
+                                    }
+                                ]
+                            },
+                            {
+                                "callback": "feature-flags",
+                                "originPhase": "pending",
+                                "phase": "ready",
+                                "values": [
+                                    [
+                                        "compat-enabled",
+                                        "compat-variant",
+                                        "compat-replay-variant"
+                                    ],
+                                    {
+                                        "compat-enabled": true,
+                                        "compat-replay-variant": "blue",
+                                        "compat-variant": "blue"
+                                    },
+                                    {
+                                        "errorsLoading": false
+                                    }
+                                ]
+                            },
+                            {
+                                "callback": "feature-flags",
+                                "originPhase": "ready",
+                                "phase": "ready",
+                                "values": [
+                                    [
+                                        "compat-enabled",
+                                        "compat-variant",
+                                        "compat-replay-variant"
+                                    ],
+                                    {
+                                        "compat-enabled": true,
+                                        "compat-replay-variant": "blue",
+                                        "compat-variant": "blue"
+                                    },
+                                    {
+                                        "errorsLoading": false
+                                    }
                                 ]
                             }
                         ],
@@ -47258,7 +47368,8 @@
                                     "properties": {
                                         "$active_feature_flags": [
                                             "compat-enabled",
-                                            "compat-variant"
+                                            "compat-variant",
+                                            "compat-replay-variant"
                                         ],
                                         "$autocapture_disabled_server_side": false,
                                         "$browser": "Chrome",
@@ -47274,8 +47385,10 @@
                                         "$device_id": "generated-id-1",
                                         "$device_type": "Desktop",
                                         "$feature/compat-enabled": true,
+                                        "$feature/compat-replay-variant": "red",
                                         "$feature/compat-variant": "blue",
                                         "$feature_flag_payloads": {
+                                            "compat-replay-variant": "\"red\"",
                                             "compat-variant": "\"blue\""
                                         },
                                         "$feature_flag_request_id": "generated-id-10",
@@ -47292,7 +47405,7 @@
                                         "$pathname": "/",
                                         "$process_person_profile": false,
                                         "$raw_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.25 Safari/537.36",
-                                        "$recording_status": "active",
+                                        "$recording_status": "buffering",
                                         "$referrer": "$direct",
                                         "$referring_domain": "$direct",
                                         "$screen_height": 768,
@@ -47302,7 +47415,7 @@
                                         "$sdk_debug_replay_event_trigger_status": "trigger_disabled",
                                         "$sdk_debug_replay_flushed_size": "<encoded-size>",
                                         "$sdk_debug_replay_internal_buffer_length": "<buffer-count>",
-                                        "$sdk_debug_replay_linked_flag_trigger_status": "trigger_activated",
+                                        "$sdk_debug_replay_linked_flag_trigger_status": "trigger_pending",
                                         "$sdk_debug_replay_rrweb_error": false,
                                         "$sdk_debug_replay_url_trigger_status": "trigger_disabled",
                                         "$sdk_debug_retry_queue_size": 0,
@@ -47313,7 +47426,6 @@
                                         "$session_entry_referring_domain": "$direct",
                                         "$session_entry_url": "<fixture-origin>/",
                                         "$session_id": "generated-id-2",
-                                        "$session_recording_start_reason": "recording_initialized",
                                         "$time": 1704067201.1,
                                         "$timezone": "UTC",
                                         "$timezone_offset": 0,
@@ -47340,6 +47452,13 @@
                                         "value": "2024-01-01T00:00:01.100Z"
                                     },
                                     "uuid": "generated-id-12"
+                                }
+                            },
+                            {
+                                "method": "reloadFeatureFlags",
+                                "phase": "ready",
+                                "returned": {
+                                    "$kind": "undefined"
                                 }
                             },
                             {
@@ -47404,7 +47523,8 @@
                                 "ph_phc_COMPAT_posthog": {
                                     "$active_feature_flags": [
                                         "compat-enabled",
-                                        "compat-variant"
+                                        "compat-variant",
+                                        "compat-replay-variant"
                                     ],
                                     "$autocapture_disabled_server_side": false,
                                     "$capture_rate_limit": {
@@ -47424,6 +47544,7 @@
                                     "$device_id": "generated-id-1",
                                     "$enabled_feature_flags": {
                                         "compat-enabled": true,
+                                        "compat-replay-variant": "blue",
                                         "compat-variant": "blue"
                                     },
                                     "$error_tracking_suppression_rules": [],
@@ -47431,9 +47552,10 @@
                                     "$feature_flag_errors": [],
                                     "$feature_flag_evaluated_at": 1704067200,
                                     "$feature_flag_payloads": {
+                                        "compat-replay-variant": "\"blue\"",
                                         "compat-variant": "\"blue\""
                                     },
-                                    "$feature_flag_request_id": "generated-id-10",
+                                    "$feature_flag_request_id": "generated-id-13",
                                     "$heatmaps_enabled_server_side": false,
                                     "$initial_person_info": {
                                         "r": "$direct",
@@ -47460,7 +47582,7 @@
                                         "enabled": true,
                                         "endpoint": "/s/",
                                         "linkedFlag": {
-                                            "flag": "compat-variant",
+                                            "flag": "compat-replay-variant",
                                             "variant": "blue"
                                         },
                                         "minimumDurationMilliseconds": null,
@@ -47484,18 +47606,20 @@
                                     "$sdk_debug_extensions_init_time_ms": "<cpu-duration-ms>",
                                     "$sdk_debug_replay_event_trigger_status": "trigger_disabled",
                                     "$sdk_debug_replay_linked_flag_trigger_status": "trigger_activated",
+                                    "$sdk_debug_replay_pending_trigger_conditions": [],
                                     "$sdk_debug_replay_url_trigger_status": "trigger_disabled",
-                                    "$session_recording_start_reason": "recording_initialized"
+                                    "$session_recording_start_reason": "linked_flag_matched"
                                 },
                                 "ph_phc_COMPAT_primary_window_exists": "true",
                                 "ph_phc_COMPAT_session_registered_properties": [
                                     "$sdk_debug_extensions_init_method",
                                     "$sdk_debug_extensions_init_time_ms",
                                     "$sdk_debug_replay_remote_trigger_matching_config",
-                                    "$session_recording_start_reason",
                                     "$sdk_debug_replay_event_trigger_status",
                                     "$sdk_debug_replay_url_trigger_status",
-                                    "$sdk_debug_replay_linked_flag_trigger_status"
+                                    "$sdk_debug_replay_linked_flag_trigger_status",
+                                    "$sdk_debug_replay_pending_trigger_conditions",
+                                    "$session_recording_start_reason"
                                 ],
                                 "ph_phc_COMPAT_window_id": "generated-id-4"
                             }
@@ -47694,7 +47818,8 @@
                                 "properties": {
                                     "$active_feature_flags": [
                                         "compat-enabled",
-                                        "compat-variant"
+                                        "compat-variant",
+                                        "compat-replay-variant"
                                     ],
                                     "$autocapture_disabled_server_side": false,
                                     "$browser": "Chrome",
@@ -47710,8 +47835,10 @@
                                     "$device_id": "generated-id-1",
                                     "$device_type": "Desktop",
                                     "$feature/compat-enabled": true,
+                                    "$feature/compat-replay-variant": "red",
                                     "$feature/compat-variant": "blue",
                                     "$feature_flag_payloads": {
+                                        "compat-replay-variant": "\"red\"",
                                         "compat-variant": "\"blue\""
                                     },
                                     "$feature_flag_request_id": "generated-id-10",
@@ -47728,7 +47855,7 @@
                                     "$pathname": "/",
                                     "$process_person_profile": false,
                                     "$raw_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.25 Safari/537.36",
-                                    "$recording_status": "active",
+                                    "$recording_status": "buffering",
                                     "$referrer": "$direct",
                                     "$referring_domain": "$direct",
                                     "$screen_height": 768,
@@ -47738,7 +47865,7 @@
                                     "$sdk_debug_replay_event_trigger_status": "trigger_disabled",
                                     "$sdk_debug_replay_flushed_size": "<encoded-size>",
                                     "$sdk_debug_replay_internal_buffer_length": "<buffer-count>",
-                                    "$sdk_debug_replay_linked_flag_trigger_status": "trigger_activated",
+                                    "$sdk_debug_replay_linked_flag_trigger_status": "trigger_pending",
                                     "$sdk_debug_replay_rrweb_error": false,
                                     "$sdk_debug_replay_url_trigger_status": "trigger_disabled",
                                     "$sdk_debug_retry_queue_size": 0,
@@ -47749,7 +47876,6 @@
                                     "$session_entry_referring_domain": "$direct",
                                     "$session_entry_url": "<fixture-origin>/",
                                     "$session_id": "generated-id-2",
-                                    "$session_recording_start_reason": "recording_initialized",
                                     "$time": 1704067201.1,
                                     "$timezone": "UTC",
                                     "$timezone_offset": 0,
@@ -47815,6 +47941,64 @@
                                         "$lib_version": "<core-version>"
                                     },
                                     "sent_at": "2024-01-01T00:00:01.005Z",
+                                    "timezone": "UTC",
+                                    "token": "phc_COMPAT"
+                                },
+                                "contentEncoding": null,
+                                "contentType": "application/x-www-form-urlencoded",
+                                "method": "POST",
+                                "path": "/flags",
+                                "query": {
+                                    "compression": [
+                                        "base64"
+                                    ],
+                                    "v": [
+                                        "2"
+                                    ]
+                                },
+                                "status": 200
+                            },
+                            {
+                                "body": {
+                                    "$device_id": "generated-id-1",
+                                    "distinct_id": "generated-id-1",
+                                    "groups": {},
+                                    "person_properties": {
+                                        "$initial__kx": null,
+                                        "$initial_bfcid": null,
+                                        "$initial_current_url": "<fixture-origin>/",
+                                        "$initial_dclid": null,
+                                        "$initial_epik": null,
+                                        "$initial_fbclid": null,
+                                        "$initial_gad_source": null,
+                                        "$initial_gbraid": null,
+                                        "$initial_gclid": null,
+                                        "$initial_gclsrc": null,
+                                        "$initial_host": "<fixture-host>",
+                                        "$initial_igshid": null,
+                                        "$initial_irclid": null,
+                                        "$initial_li_fat_id": null,
+                                        "$initial_mc_cid": null,
+                                        "$initial_msclkid": null,
+                                        "$initial_oppref": null,
+                                        "$initial_pathname": "/",
+                                        "$initial_qclid": null,
+                                        "$initial_rdt_cid": null,
+                                        "$initial_referrer": "$direct",
+                                        "$initial_referring_domain": "$direct",
+                                        "$initial_sccid": null,
+                                        "$initial_ttclid": null,
+                                        "$initial_twclid": null,
+                                        "$initial_utm_campaign": null,
+                                        "$initial_utm_content": null,
+                                        "$initial_utm_medium": null,
+                                        "$initial_utm_source": null,
+                                        "$initial_utm_term": null,
+                                        "$initial_wbraid": null,
+                                        "$lib": "web",
+                                        "$lib_version": "<core-version>"
+                                    },
+                                    "sent_at": "2024-01-01T00:00:04.405Z",
                                     "timezone": "UTC",
                                     "token": "phc_COMPAT"
                                 },
@@ -48066,7 +48250,8 @@
                                             "properties": {
                                                 "$active_feature_flags": [
                                                     "compat-enabled",
-                                                    "compat-variant"
+                                                    "compat-variant",
+                                                    "compat-replay-variant"
                                                 ],
                                                 "$autocapture_disabled_server_side": false,
                                                 "$browser": "Chrome",
@@ -48082,8 +48267,10 @@
                                                 "$device_id": "generated-id-1",
                                                 "$device_type": "Desktop",
                                                 "$feature/compat-enabled": true,
+                                                "$feature/compat-replay-variant": "red",
                                                 "$feature/compat-variant": "blue",
                                                 "$feature_flag_payloads": {
+                                                    "compat-replay-variant": "\"red\"",
                                                     "compat-variant": "\"blue\""
                                                 },
                                                 "$feature_flag_request_id": "generated-id-10",
@@ -48100,7 +48287,7 @@
                                                 "$pathname": "/",
                                                 "$process_person_profile": false,
                                                 "$raw_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.25 Safari/537.36",
-                                                "$recording_status": "active",
+                                                "$recording_status": "buffering",
                                                 "$referrer": "$direct",
                                                 "$referring_domain": "$direct",
                                                 "$screen_height": 768,
@@ -48110,7 +48297,7 @@
                                                 "$sdk_debug_replay_event_trigger_status": "trigger_disabled",
                                                 "$sdk_debug_replay_flushed_size": "<encoded-size>",
                                                 "$sdk_debug_replay_internal_buffer_length": "<buffer-count>",
-                                                "$sdk_debug_replay_linked_flag_trigger_status": "trigger_activated",
+                                                "$sdk_debug_replay_linked_flag_trigger_status": "trigger_pending",
                                                 "$sdk_debug_replay_rrweb_error": false,
                                                 "$sdk_debug_replay_url_trigger_status": "trigger_disabled",
                                                 "$sdk_debug_retry_queue_size": 0,
@@ -48121,7 +48308,6 @@
                                                 "$session_entry_referring_domain": "$direct",
                                                 "$session_entry_url": "<fixture-origin>/",
                                                 "$session_id": "generated-id-2",
-                                                "$session_recording_start_reason": "recording_initialized",
                                                 "$time": 1704067201.1,
                                                 "$timezone": "UTC",
                                                 "$timezone_offset": 0,
@@ -48410,18 +48596,6 @@
                                             {
                                                 "data": {
                                                     "payload": {
-                                                        "flag": "compat-variant",
-                                                        "reason": "linked_flag_matched",
-                                                        "variant": "blue"
-                                                    },
-                                                    "tag": "$recording_started"
-                                                },
-                                                "timestamp": 1704067201100,
-                                                "type": 5
-                                            },
-                                            {
-                                                "data": {
-                                                    "payload": {
                                                         "cache_timestamp": 1704067201000,
                                                         "canvasRecording": {
                                                             "enabled": false
@@ -48430,7 +48604,7 @@
                                                         "enabled": true,
                                                         "endpoint": "/s/",
                                                         "linkedFlag": {
-                                                            "flag": "compat-variant",
+                                                            "flag": "compat-replay-variant",
                                                             "variant": "blue"
                                                         },
                                                         "minimumDurationMilliseconds": null,
@@ -48574,16 +48748,6 @@
                                                 "type": 5
                                             },
                                             {
-                                                "data": {
-                                                    "payload": {
-                                                        "reason": "recording_initialized"
-                                                    },
-                                                    "tag": "$recording_started"
-                                                },
-                                                "timestamp": 1704067201100,
-                                                "type": 5
-                                            },
-                                            {
                                                 "cv": "2024-10",
                                                 "data": {
                                                     "adds": [
@@ -48591,7 +48755,7 @@
                                                             "nextId": null,
                                                             "node": {
                                                                 "id": 33,
-                                                                "textContent": "Flag enabled",
+                                                                "textContent": "Before trigger",
                                                                 "type": 3
                                                             },
                                                             "parentId": 24
@@ -48658,6 +48822,94 @@
                                                 },
                                                 "timestamp": 1704067201300,
                                                 "type": 3
+                                            },
+                                            {
+                                                "data": {
+                                                    "payload": {
+                                                        "flag": "compat-replay-variant",
+                                                        "reason": "linked_flag_matched",
+                                                        "variant": "blue"
+                                                    },
+                                                    "tag": "$recording_started"
+                                                },
+                                                "timestamp": 1704067204500,
+                                                "type": 5
+                                            },
+                                            {
+                                                "cv": "2024-10",
+                                                "data": {
+                                                    "adds": [
+                                                        {
+                                                            "nextId": null,
+                                                            "node": {
+                                                                "id": 34,
+                                                                "textContent": "After trigger",
+                                                                "type": 3
+                                                            },
+                                                            "parentId": 24
+                                                        }
+                                                    ],
+                                                    "attributes": [],
+                                                    "removes": [
+                                                        {
+                                                            "id": 33,
+                                                            "parentId": 24
+                                                        }
+                                                    ],
+                                                    "source": 0,
+                                                    "texts": []
+                                                },
+                                                "timestamp": 1704067204500,
+                                                "type": 3
+                                            },
+                                            {
+                                                "data": {
+                                                    "positions": [
+                                                        {
+                                                            "id": 16,
+                                                            "timeOffset": 0,
+                                                            "x": 20,
+                                                            "y": 30
+                                                        }
+                                                    ],
+                                                    "source": 1
+                                                },
+                                                "timestamp": 1704067204600,
+                                                "type": 3
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": 16,
+                                                    "source": 2,
+                                                    "type": 1,
+                                                    "x": 20,
+                                                    "y": 30
+                                                },
+                                                "timestamp": 1704067204600,
+                                                "type": 3
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": 16,
+                                                    "source": 2,
+                                                    "type": 0,
+                                                    "x": 20,
+                                                    "y": 30
+                                                },
+                                                "timestamp": 1704067204600,
+                                                "type": 3
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": 16,
+                                                    "pointerType": 0,
+                                                    "source": 2,
+                                                    "type": 2,
+                                                    "x": 20,
+                                                    "y": 30
+                                                },
+                                                "timestamp": 1704067204600,
+                                                "type": 3
                                             }
                                         ],
                                         "$snapshot_host": "127.0.0.1",
@@ -48665,9 +48917,9 @@
                                         "distinct_id": "generated-id-1",
                                         "token": "phc_COMPAT"
                                     },
-                                    "sent_at": "2024-01-01T00:00:03.300Z",
-                                    "timestamp": "2024-01-01T00:00:03.300Z",
-                                    "uuid": "generated-id-13"
+                                    "sent_at": "2024-01-01T00:00:05.300Z",
+                                    "timestamp": "2024-01-01T00:00:05.300Z",
+                                    "uuid": "generated-id-14"
                                 },
                                 "contentEncoding": null,
                                 "contentType": "application/json",
@@ -48950,18 +49202,6 @@
                                         {
                                             "data": {
                                                 "payload": {
-                                                    "flag": "compat-variant",
-                                                    "reason": "linked_flag_matched",
-                                                    "variant": "blue"
-                                                },
-                                                "tag": "$recording_started"
-                                            },
-                                            "timestamp": 1704067201100,
-                                            "type": 5
-                                        },
-                                        {
-                                            "data": {
-                                                "payload": {
                                                     "cache_timestamp": 1704067201000,
                                                     "canvasRecording": {
                                                         "enabled": false
@@ -48970,7 +49210,7 @@
                                                     "enabled": true,
                                                     "endpoint": "/s/",
                                                     "linkedFlag": {
-                                                        "flag": "compat-variant",
+                                                        "flag": "compat-replay-variant",
                                                         "variant": "blue"
                                                     },
                                                     "minimumDurationMilliseconds": null,
@@ -49114,16 +49354,6 @@
                                             "type": 5
                                         },
                                         {
-                                            "data": {
-                                                "payload": {
-                                                    "reason": "recording_initialized"
-                                                },
-                                                "tag": "$recording_started"
-                                            },
-                                            "timestamp": 1704067201100,
-                                            "type": 5
-                                        },
-                                        {
                                             "cv": "2024-10",
                                             "data": {
                                                 "adds": [
@@ -49131,7 +49361,7 @@
                                                         "nextId": null,
                                                         "node": {
                                                             "id": 33,
-                                                            "textContent": "Flag enabled",
+                                                            "textContent": "Before trigger",
                                                             "type": 3
                                                         },
                                                         "parentId": 24
@@ -49198,6 +49428,94 @@
                                             },
                                             "timestamp": 1704067201300,
                                             "type": 3
+                                        },
+                                        {
+                                            "data": {
+                                                "payload": {
+                                                    "flag": "compat-replay-variant",
+                                                    "reason": "linked_flag_matched",
+                                                    "variant": "blue"
+                                                },
+                                                "tag": "$recording_started"
+                                            },
+                                            "timestamp": 1704067204500,
+                                            "type": 5
+                                        },
+                                        {
+                                            "cv": "2024-10",
+                                            "data": {
+                                                "adds": [
+                                                    {
+                                                        "nextId": null,
+                                                        "node": {
+                                                            "id": 34,
+                                                            "textContent": "After trigger",
+                                                            "type": 3
+                                                        },
+                                                        "parentId": 24
+                                                    }
+                                                ],
+                                                "attributes": [],
+                                                "removes": [
+                                                    {
+                                                        "id": 33,
+                                                        "parentId": 24
+                                                    }
+                                                ],
+                                                "source": 0,
+                                                "texts": []
+                                            },
+                                            "timestamp": 1704067204500,
+                                            "type": 3
+                                        },
+                                        {
+                                            "data": {
+                                                "positions": [
+                                                    {
+                                                        "id": 16,
+                                                        "timeOffset": 0,
+                                                        "x": 20,
+                                                        "y": 30
+                                                    }
+                                                ],
+                                                "source": 1
+                                            },
+                                            "timestamp": 1704067204600,
+                                            "type": 3
+                                        },
+                                        {
+                                            "data": {
+                                                "id": 16,
+                                                "source": 2,
+                                                "type": 1,
+                                                "x": 20,
+                                                "y": 30
+                                            },
+                                            "timestamp": 1704067204600,
+                                            "type": 3
+                                        },
+                                        {
+                                            "data": {
+                                                "id": 16,
+                                                "source": 2,
+                                                "type": 0,
+                                                "x": 20,
+                                                "y": 30
+                                            },
+                                            "timestamp": 1704067204600,
+                                            "type": 3
+                                        },
+                                        {
+                                            "data": {
+                                                "id": 16,
+                                                "pointerType": 0,
+                                                "source": 2,
+                                                "type": 2,
+                                                "x": 20,
+                                                "y": 30
+                                            },
+                                            "timestamp": 1704067204600,
+                                            "type": 3
                                         }
                                     ],
                                     "$snapshot_host": "127.0.0.1",
@@ -49205,15 +49523,19 @@
                                     "distinct_id": "generated-id-1",
                                     "token": "phc_COMPAT"
                                 },
-                                "sent_at": "2024-01-01T00:00:03.300Z",
-                                "timestamp": "2024-01-01T00:00:03.300Z",
-                                "uuid": "generated-id-13"
+                                "sent_at": "2024-01-01T00:00:05.300Z",
+                                "timestamp": "2024-01-01T00:00:05.300Z",
+                                "uuid": "generated-id-14"
                             }
                         ]
                     },
                     "pageErrors": [],
                     "replay": {
-                        "statusAfterStart": "active"
+                        "beforeTriggerSnapshots": 0,
+                        "statusAfterStart": "active",
+                        "statusBeforeTrigger": "buffering",
+                        "variantAfterTrigger": "blue",
+                        "variantBeforeTrigger": "red"
                     },
                     "ui": {},
                     "unexpectedNetwork": []
@@ -60634,7 +60956,7 @@
                                     "$logs_capture_enabled_server_side": false,
                                     "$minimal_flag_called_events": false,
                                     "$sesid": [
-                                        1704067210900,
+                                        1704067211000,
                                         "generated-id-2",
                                         1704067201000
                                     ],
@@ -62009,10 +62331,10 @@
                                             {
                                                 "data": {
                                                     "height": 768,
-                                                    "href": "<fixture-origin>/?compat-url-trigger",
+                                                    "href": "<fixture-origin>/?compat-url-resumed",
                                                     "width": 1024
                                                 },
-                                                "timestamp": 1704067210800,
+                                                "timestamp": 1704067210900,
                                                 "type": 4
                                             },
                                             {
@@ -62166,7 +62488,7 @@
                                                                                         },
                                                                                         "childNodes": [
                                                                                             {
-                                                                                                "id": 36,
+                                                                                                "id": 37,
                                                                                                 "textContent": "After blocked URL",
                                                                                                 "type": 3
                                                                                             }
@@ -62247,7 +62569,7 @@
                                                         "type": 0
                                                     }
                                                 },
-                                                "timestamp": 1704067210800,
+                                                "timestamp": 1704067210900,
                                                 "type": 2
                                             },
                                             {
@@ -62257,17 +62579,17 @@
                                                     },
                                                     "tag": "recording resumed"
                                                 },
-                                                "timestamp": 1704067210800,
+                                                "timestamp": 1704067210900,
                                                 "type": 5
                                             },
                                             {
                                                 "data": {
                                                     "payload": {
-                                                        "href": "<fixture-origin>/?compat-url-trigger"
+                                                        "href": "<fixture-origin>/?compat-url-resumed"
                                                     },
                                                     "tag": "$url_changed"
                                                 },
-                                                "timestamp": 1704067210800,
+                                                "timestamp": 1704067210900,
                                                 "type": 5
                                             },
                                             {
@@ -62277,7 +62599,7 @@
                                                         {
                                                             "nextId": null,
                                                             "node": {
-                                                                "id": 36,
+                                                                "id": 37,
                                                                 "textContent": "After blocked URL",
                                                                 "type": 3
                                                             },
@@ -62287,14 +62609,14 @@
                                                     "attributes": [],
                                                     "removes": [
                                                         {
-                                                            "id": 35,
+                                                            "id": 36,
                                                             "parentId": 24
                                                         }
                                                     ],
                                                     "source": 0,
                                                     "texts": []
                                                 },
-                                                "timestamp": 1704067210800,
+                                                "timestamp": 1704067210900,
                                                 "type": 3
                                             },
                                             {
@@ -62309,7 +62631,7 @@
                                                     ],
                                                     "source": 1
                                                 },
-                                                "timestamp": 1704067210900,
+                                                "timestamp": 1704067211000,
                                                 "type": 3
                                             },
                                             {
@@ -62320,7 +62642,7 @@
                                                     "x": 20,
                                                     "y": 30
                                                 },
-                                                "timestamp": 1704067210900,
+                                                "timestamp": 1704067211000,
                                                 "type": 3
                                             },
                                             {
@@ -62331,7 +62653,7 @@
                                                     "x": 20,
                                                     "y": 30
                                                 },
-                                                "timestamp": 1704067210900,
+                                                "timestamp": 1704067211000,
                                                 "type": 3
                                             },
                                             {
@@ -62343,7 +62665,7 @@
                                                     "x": 20,
                                                     "y": 30
                                                 },
-                                                "timestamp": 1704067210900,
+                                                "timestamp": 1704067211000,
                                                 "type": 3
                                             }
                                         ],
@@ -63020,10 +63342,10 @@
                                         {
                                             "data": {
                                                 "height": 768,
-                                                "href": "<fixture-origin>/?compat-url-trigger",
+                                                "href": "<fixture-origin>/?compat-url-resumed",
                                                 "width": 1024
                                             },
-                                            "timestamp": 1704067210800,
+                                            "timestamp": 1704067210900,
                                             "type": 4
                                         },
                                         {
@@ -63177,7 +63499,7 @@
                                                                                     },
                                                                                     "childNodes": [
                                                                                         {
-                                                                                            "id": 36,
+                                                                                            "id": 37,
                                                                                             "textContent": "After blocked URL",
                                                                                             "type": 3
                                                                                         }
@@ -63258,7 +63580,7 @@
                                                     "type": 0
                                                 }
                                             },
-                                            "timestamp": 1704067210800,
+                                            "timestamp": 1704067210900,
                                             "type": 2
                                         },
                                         {
@@ -63268,17 +63590,17 @@
                                                 },
                                                 "tag": "recording resumed"
                                             },
-                                            "timestamp": 1704067210800,
+                                            "timestamp": 1704067210900,
                                             "type": 5
                                         },
                                         {
                                             "data": {
                                                 "payload": {
-                                                    "href": "<fixture-origin>/?compat-url-trigger"
+                                                    "href": "<fixture-origin>/?compat-url-resumed"
                                                 },
                                                 "tag": "$url_changed"
                                             },
-                                            "timestamp": 1704067210800,
+                                            "timestamp": 1704067210900,
                                             "type": 5
                                         },
                                         {
@@ -63288,7 +63610,7 @@
                                                     {
                                                         "nextId": null,
                                                         "node": {
-                                                            "id": 36,
+                                                            "id": 37,
                                                             "textContent": "After blocked URL",
                                                             "type": 3
                                                         },
@@ -63298,14 +63620,14 @@
                                                 "attributes": [],
                                                 "removes": [
                                                     {
-                                                        "id": 35,
+                                                        "id": 36,
                                                         "parentId": 24
                                                     }
                                                 ],
                                                 "source": 0,
                                                 "texts": []
                                             },
-                                            "timestamp": 1704067210800,
+                                            "timestamp": 1704067210900,
                                             "type": 3
                                         },
                                         {
@@ -63320,7 +63642,7 @@
                                                 ],
                                                 "source": 1
                                             },
-                                            "timestamp": 1704067210900,
+                                            "timestamp": 1704067211000,
                                             "type": 3
                                         },
                                         {
@@ -63331,7 +63653,7 @@
                                                 "x": 20,
                                                 "y": 30
                                             },
-                                            "timestamp": 1704067210900,
+                                            "timestamp": 1704067211000,
                                             "type": 3
                                         },
                                         {
@@ -63342,7 +63664,7 @@
                                                 "x": 20,
                                                 "y": 30
                                             },
-                                            "timestamp": 1704067210900,
+                                            "timestamp": 1704067211000,
                                             "type": 3
                                         },
                                         {
@@ -63354,7 +63676,7 @@
                                                 "x": 20,
                                                 "y": 30
                                             },
-                                            "timestamp": 1704067210900,
+                                            "timestamp": 1704067211000,
                                             "type": 3
                                         }
                                     ],
@@ -130364,10 +130686,12 @@
                                 "values": [
                                     [
                                         "compat-enabled",
-                                        "compat-variant"
+                                        "compat-variant",
+                                        "compat-replay-variant"
                                     ],
                                     {
                                         "compat-enabled": true,
+                                        "compat-replay-variant": "red",
                                         "compat-variant": "blue"
                                     },
                                     {
@@ -130382,10 +130706,12 @@
                                 "values": [
                                     [
                                         "compat-enabled",
-                                        "compat-variant"
+                                        "compat-variant",
+                                        "compat-replay-variant"
                                     ],
                                     {
                                         "compat-enabled": true,
+                                        "compat-replay-variant": "red",
                                         "compat-variant": "blue"
                                     },
                                     {
@@ -130400,10 +130726,12 @@
                                 "values": [
                                     [
                                         "compat-enabled",
-                                        "compat-variant"
+                                        "compat-variant",
+                                        "compat-replay-variant"
                                     ],
                                     {
                                         "compat-enabled": true,
+                                        "compat-replay-variant": "red",
                                         "compat-variant": "blue"
                                     },
                                     {
@@ -130418,10 +130746,12 @@
                                 "values": [
                                     [
                                         "compat-enabled",
-                                        "compat-variant"
+                                        "compat-variant",
+                                        "compat-replay-variant"
                                     ],
                                     {
                                         "compat-enabled": true,
+                                        "compat-replay-variant": "red",
                                         "compat-variant": "blue"
                                     },
                                     {
@@ -130436,10 +130766,12 @@
                                 "values": [
                                     [
                                         "compat-enabled",
-                                        "compat-variant"
+                                        "compat-variant",
+                                        "compat-replay-variant"
                                     ],
                                     {
                                         "compat-enabled": true,
+                                        "compat-replay-variant": "red",
                                         "compat-variant": "blue"
                                     }
                                 ]
@@ -130450,6 +130782,106 @@
                                 "phase": "ready",
                                 "values": [
                                     []
+                                ]
+                            },
+                            {
+                                "callback": "feature-flags",
+                                "originPhase": "before-init",
+                                "phase": "ready",
+                                "values": [
+                                    [
+                                        "compat-enabled",
+                                        "compat-variant",
+                                        "compat-replay-variant"
+                                    ],
+                                    {
+                                        "compat-enabled": true,
+                                        "compat-replay-variant": "blue",
+                                        "compat-variant": "blue"
+                                    },
+                                    {
+                                        "errorsLoading": false
+                                    }
+                                ]
+                            },
+                            {
+                                "callback": "feature-flags",
+                                "originPhase": "loaded",
+                                "phase": "ready",
+                                "values": [
+                                    [
+                                        "compat-enabled",
+                                        "compat-variant",
+                                        "compat-replay-variant"
+                                    ],
+                                    {
+                                        "compat-enabled": true,
+                                        "compat-replay-variant": "blue",
+                                        "compat-variant": "blue"
+                                    },
+                                    {
+                                        "errorsLoading": false
+                                    }
+                                ]
+                            },
+                            {
+                                "callback": "feature-flags",
+                                "originPhase": "init-return",
+                                "phase": "ready",
+                                "values": [
+                                    [
+                                        "compat-enabled",
+                                        "compat-variant",
+                                        "compat-replay-variant"
+                                    ],
+                                    {
+                                        "compat-enabled": true,
+                                        "compat-replay-variant": "blue",
+                                        "compat-variant": "blue"
+                                    },
+                                    {
+                                        "errorsLoading": false
+                                    }
+                                ]
+                            },
+                            {
+                                "callback": "feature-flags",
+                                "originPhase": "pending",
+                                "phase": "ready",
+                                "values": [
+                                    [
+                                        "compat-enabled",
+                                        "compat-variant",
+                                        "compat-replay-variant"
+                                    ],
+                                    {
+                                        "compat-enabled": true,
+                                        "compat-replay-variant": "blue",
+                                        "compat-variant": "blue"
+                                    },
+                                    {
+                                        "errorsLoading": false
+                                    }
+                                ]
+                            },
+                            {
+                                "callback": "feature-flags",
+                                "originPhase": "ready",
+                                "phase": "ready",
+                                "values": [
+                                    [
+                                        "compat-enabled",
+                                        "compat-variant",
+                                        "compat-replay-variant"
+                                    ],
+                                    {
+                                        "compat-enabled": true,
+                                        "compat-replay-variant": "blue",
+                                        "compat-variant": "blue"
+                                    },
+                                    {
+                                        "errorsLoading": false
+                                    }
                                 ]
                             }
                         ],
@@ -131007,7 +131439,8 @@
                                     "properties": {
                                         "$active_feature_flags": [
                                             "compat-enabled",
-                                            "compat-variant"
+                                            "compat-variant",
+                                            "compat-replay-variant"
                                         ],
                                         "$autocapture_disabled_server_side": false,
                                         "$browser": "Firefox",
@@ -131023,8 +131456,10 @@
                                         "$device_id": "generated-id-1",
                                         "$device_type": "Desktop",
                                         "$feature/compat-enabled": true,
+                                        "$feature/compat-replay-variant": "red",
                                         "$feature/compat-variant": "blue",
                                         "$feature_flag_payloads": {
+                                            "compat-replay-variant": "\"red\"",
                                             "compat-variant": "\"blue\""
                                         },
                                         "$feature_flag_request_id": "generated-id-10",
@@ -131041,7 +131476,7 @@
                                         "$pathname": "/",
                                         "$process_person_profile": false,
                                         "$raw_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0",
-                                        "$recording_status": "active",
+                                        "$recording_status": "buffering",
                                         "$referrer": "$direct",
                                         "$referring_domain": "$direct",
                                         "$screen_height": 768,
@@ -131051,7 +131486,7 @@
                                         "$sdk_debug_replay_event_trigger_status": "trigger_disabled",
                                         "$sdk_debug_replay_flushed_size": "<encoded-size>",
                                         "$sdk_debug_replay_internal_buffer_length": "<buffer-count>",
-                                        "$sdk_debug_replay_linked_flag_trigger_status": "trigger_activated",
+                                        "$sdk_debug_replay_linked_flag_trigger_status": "trigger_pending",
                                         "$sdk_debug_replay_rrweb_error": false,
                                         "$sdk_debug_replay_url_trigger_status": "trigger_disabled",
                                         "$sdk_debug_retry_queue_size": 0,
@@ -131062,7 +131497,6 @@
                                         "$session_entry_referring_domain": "$direct",
                                         "$session_entry_url": "<fixture-origin>/",
                                         "$session_id": "generated-id-2",
-                                        "$session_recording_start_reason": "recording_initialized",
                                         "$time": 1704067201.1,
                                         "$timezone": "UTC",
                                         "$timezone_offset": 0,
@@ -131089,6 +131523,13 @@
                                         "value": "2024-01-01T00:00:01.100Z"
                                     },
                                     "uuid": "generated-id-12"
+                                }
+                            },
+                            {
+                                "method": "reloadFeatureFlags",
+                                "phase": "ready",
+                                "returned": {
+                                    "$kind": "undefined"
                                 }
                             },
                             {
@@ -131153,7 +131594,8 @@
                                 "ph_phc_COMPAT_posthog": {
                                     "$active_feature_flags": [
                                         "compat-enabled",
-                                        "compat-variant"
+                                        "compat-variant",
+                                        "compat-replay-variant"
                                     ],
                                     "$autocapture_disabled_server_side": false,
                                     "$capture_rate_limit": {
@@ -131173,6 +131615,7 @@
                                     "$device_id": "generated-id-1",
                                     "$enabled_feature_flags": {
                                         "compat-enabled": true,
+                                        "compat-replay-variant": "blue",
                                         "compat-variant": "blue"
                                     },
                                     "$error_tracking_suppression_rules": [],
@@ -131180,9 +131623,10 @@
                                     "$feature_flag_errors": [],
                                     "$feature_flag_evaluated_at": 1704067200,
                                     "$feature_flag_payloads": {
+                                        "compat-replay-variant": "\"blue\"",
                                         "compat-variant": "\"blue\""
                                     },
-                                    "$feature_flag_request_id": "generated-id-10",
+                                    "$feature_flag_request_id": "generated-id-13",
                                     "$heatmaps_enabled_server_side": false,
                                     "$initial_person_info": {
                                         "r": "$direct",
@@ -131209,7 +131653,7 @@
                                         "enabled": true,
                                         "endpoint": "/s/",
                                         "linkedFlag": {
-                                            "flag": "compat-variant",
+                                            "flag": "compat-replay-variant",
                                             "variant": "blue"
                                         },
                                         "minimumDurationMilliseconds": null,
@@ -131233,18 +131677,20 @@
                                     "$sdk_debug_extensions_init_time_ms": "<cpu-duration-ms>",
                                     "$sdk_debug_replay_event_trigger_status": "trigger_disabled",
                                     "$sdk_debug_replay_linked_flag_trigger_status": "trigger_activated",
+                                    "$sdk_debug_replay_pending_trigger_conditions": [],
                                     "$sdk_debug_replay_url_trigger_status": "trigger_disabled",
-                                    "$session_recording_start_reason": "recording_initialized"
+                                    "$session_recording_start_reason": "linked_flag_matched"
                                 },
                                 "ph_phc_COMPAT_primary_window_exists": "true",
                                 "ph_phc_COMPAT_session_registered_properties": [
                                     "$sdk_debug_extensions_init_method",
                                     "$sdk_debug_extensions_init_time_ms",
                                     "$sdk_debug_replay_remote_trigger_matching_config",
-                                    "$session_recording_start_reason",
                                     "$sdk_debug_replay_event_trigger_status",
                                     "$sdk_debug_replay_url_trigger_status",
-                                    "$sdk_debug_replay_linked_flag_trigger_status"
+                                    "$sdk_debug_replay_linked_flag_trigger_status",
+                                    "$sdk_debug_replay_pending_trigger_conditions",
+                                    "$session_recording_start_reason"
                                 ],
                                 "ph_phc_COMPAT_window_id": "generated-id-4"
                             }
@@ -131443,7 +131889,8 @@
                                 "properties": {
                                     "$active_feature_flags": [
                                         "compat-enabled",
-                                        "compat-variant"
+                                        "compat-variant",
+                                        "compat-replay-variant"
                                     ],
                                     "$autocapture_disabled_server_side": false,
                                     "$browser": "Firefox",
@@ -131459,8 +131906,10 @@
                                     "$device_id": "generated-id-1",
                                     "$device_type": "Desktop",
                                     "$feature/compat-enabled": true,
+                                    "$feature/compat-replay-variant": "red",
                                     "$feature/compat-variant": "blue",
                                     "$feature_flag_payloads": {
+                                        "compat-replay-variant": "\"red\"",
                                         "compat-variant": "\"blue\""
                                     },
                                     "$feature_flag_request_id": "generated-id-10",
@@ -131477,7 +131926,7 @@
                                     "$pathname": "/",
                                     "$process_person_profile": false,
                                     "$raw_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0",
-                                    "$recording_status": "active",
+                                    "$recording_status": "buffering",
                                     "$referrer": "$direct",
                                     "$referring_domain": "$direct",
                                     "$screen_height": 768,
@@ -131487,7 +131936,7 @@
                                     "$sdk_debug_replay_event_trigger_status": "trigger_disabled",
                                     "$sdk_debug_replay_flushed_size": "<encoded-size>",
                                     "$sdk_debug_replay_internal_buffer_length": "<buffer-count>",
-                                    "$sdk_debug_replay_linked_flag_trigger_status": "trigger_activated",
+                                    "$sdk_debug_replay_linked_flag_trigger_status": "trigger_pending",
                                     "$sdk_debug_replay_rrweb_error": false,
                                     "$sdk_debug_replay_url_trigger_status": "trigger_disabled",
                                     "$sdk_debug_retry_queue_size": 0,
@@ -131498,7 +131947,6 @@
                                     "$session_entry_referring_domain": "$direct",
                                     "$session_entry_url": "<fixture-origin>/",
                                     "$session_id": "generated-id-2",
-                                    "$session_recording_start_reason": "recording_initialized",
                                     "$time": 1704067201.1,
                                     "$timezone": "UTC",
                                     "$timezone_offset": 0,
@@ -131564,6 +132012,64 @@
                                         "$lib_version": "<core-version>"
                                     },
                                     "sent_at": "2024-01-01T00:00:01.005Z",
+                                    "timezone": "UTC",
+                                    "token": "phc_COMPAT"
+                                },
+                                "contentEncoding": null,
+                                "contentType": "application/x-www-form-urlencoded",
+                                "method": "POST",
+                                "path": "/flags",
+                                "query": {
+                                    "compression": [
+                                        "base64"
+                                    ],
+                                    "v": [
+                                        "2"
+                                    ]
+                                },
+                                "status": 200
+                            },
+                            {
+                                "body": {
+                                    "$device_id": "generated-id-1",
+                                    "distinct_id": "generated-id-1",
+                                    "groups": {},
+                                    "person_properties": {
+                                        "$initial__kx": null,
+                                        "$initial_bfcid": null,
+                                        "$initial_current_url": "<fixture-origin>/",
+                                        "$initial_dclid": null,
+                                        "$initial_epik": null,
+                                        "$initial_fbclid": null,
+                                        "$initial_gad_source": null,
+                                        "$initial_gbraid": null,
+                                        "$initial_gclid": null,
+                                        "$initial_gclsrc": null,
+                                        "$initial_host": "<fixture-host>",
+                                        "$initial_igshid": null,
+                                        "$initial_irclid": null,
+                                        "$initial_li_fat_id": null,
+                                        "$initial_mc_cid": null,
+                                        "$initial_msclkid": null,
+                                        "$initial_oppref": null,
+                                        "$initial_pathname": "/",
+                                        "$initial_qclid": null,
+                                        "$initial_rdt_cid": null,
+                                        "$initial_referrer": "$direct",
+                                        "$initial_referring_domain": "$direct",
+                                        "$initial_sccid": null,
+                                        "$initial_ttclid": null,
+                                        "$initial_twclid": null,
+                                        "$initial_utm_campaign": null,
+                                        "$initial_utm_content": null,
+                                        "$initial_utm_medium": null,
+                                        "$initial_utm_source": null,
+                                        "$initial_utm_term": null,
+                                        "$initial_wbraid": null,
+                                        "$lib": "web",
+                                        "$lib_version": "<core-version>"
+                                    },
+                                    "sent_at": "2024-01-01T00:00:04.405Z",
                                     "timezone": "UTC",
                                     "token": "phc_COMPAT"
                                 },
@@ -131815,7 +132321,8 @@
                                             "properties": {
                                                 "$active_feature_flags": [
                                                     "compat-enabled",
-                                                    "compat-variant"
+                                                    "compat-variant",
+                                                    "compat-replay-variant"
                                                 ],
                                                 "$autocapture_disabled_server_side": false,
                                                 "$browser": "Firefox",
@@ -131831,8 +132338,10 @@
                                                 "$device_id": "generated-id-1",
                                                 "$device_type": "Desktop",
                                                 "$feature/compat-enabled": true,
+                                                "$feature/compat-replay-variant": "red",
                                                 "$feature/compat-variant": "blue",
                                                 "$feature_flag_payloads": {
+                                                    "compat-replay-variant": "\"red\"",
                                                     "compat-variant": "\"blue\""
                                                 },
                                                 "$feature_flag_request_id": "generated-id-10",
@@ -131849,7 +132358,7 @@
                                                 "$pathname": "/",
                                                 "$process_person_profile": false,
                                                 "$raw_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0",
-                                                "$recording_status": "active",
+                                                "$recording_status": "buffering",
                                                 "$referrer": "$direct",
                                                 "$referring_domain": "$direct",
                                                 "$screen_height": 768,
@@ -131859,7 +132368,7 @@
                                                 "$sdk_debug_replay_event_trigger_status": "trigger_disabled",
                                                 "$sdk_debug_replay_flushed_size": "<encoded-size>",
                                                 "$sdk_debug_replay_internal_buffer_length": "<buffer-count>",
-                                                "$sdk_debug_replay_linked_flag_trigger_status": "trigger_activated",
+                                                "$sdk_debug_replay_linked_flag_trigger_status": "trigger_pending",
                                                 "$sdk_debug_replay_rrweb_error": false,
                                                 "$sdk_debug_replay_url_trigger_status": "trigger_disabled",
                                                 "$sdk_debug_retry_queue_size": 0,
@@ -131870,7 +132379,6 @@
                                                 "$session_entry_referring_domain": "$direct",
                                                 "$session_entry_url": "<fixture-origin>/",
                                                 "$session_id": "generated-id-2",
-                                                "$session_recording_start_reason": "recording_initialized",
                                                 "$time": 1704067201.1,
                                                 "$timezone": "UTC",
                                                 "$timezone_offset": 0,
@@ -132159,18 +132667,6 @@
                                             {
                                                 "data": {
                                                     "payload": {
-                                                        "flag": "compat-variant",
-                                                        "reason": "linked_flag_matched",
-                                                        "variant": "blue"
-                                                    },
-                                                    "tag": "$recording_started"
-                                                },
-                                                "timestamp": 1704067201100,
-                                                "type": 5
-                                            },
-                                            {
-                                                "data": {
-                                                    "payload": {
                                                         "cache_timestamp": 1704067201000,
                                                         "canvasRecording": {
                                                             "enabled": false
@@ -132179,7 +132675,7 @@
                                                         "enabled": true,
                                                         "endpoint": "/s/",
                                                         "linkedFlag": {
-                                                            "flag": "compat-variant",
+                                                            "flag": "compat-replay-variant",
                                                             "variant": "blue"
                                                         },
                                                         "minimumDurationMilliseconds": null,
@@ -132323,16 +132819,6 @@
                                                 "type": 5
                                             },
                                             {
-                                                "data": {
-                                                    "payload": {
-                                                        "reason": "recording_initialized"
-                                                    },
-                                                    "tag": "$recording_started"
-                                                },
-                                                "timestamp": 1704067201100,
-                                                "type": 5
-                                            },
-                                            {
                                                 "cv": "2024-10",
                                                 "data": {
                                                     "adds": [
@@ -132340,7 +132826,7 @@
                                                             "nextId": null,
                                                             "node": {
                                                                 "id": 33,
-                                                                "textContent": "Flag enabled",
+                                                                "textContent": "Before trigger",
                                                                 "type": 3
                                                             },
                                                             "parentId": 24
@@ -132407,6 +132893,94 @@
                                                 },
                                                 "timestamp": 1704067201300,
                                                 "type": 3
+                                            },
+                                            {
+                                                "data": {
+                                                    "payload": {
+                                                        "flag": "compat-replay-variant",
+                                                        "reason": "linked_flag_matched",
+                                                        "variant": "blue"
+                                                    },
+                                                    "tag": "$recording_started"
+                                                },
+                                                "timestamp": 1704067204500,
+                                                "type": 5
+                                            },
+                                            {
+                                                "cv": "2024-10",
+                                                "data": {
+                                                    "adds": [
+                                                        {
+                                                            "nextId": null,
+                                                            "node": {
+                                                                "id": 34,
+                                                                "textContent": "After trigger",
+                                                                "type": 3
+                                                            },
+                                                            "parentId": 24
+                                                        }
+                                                    ],
+                                                    "attributes": [],
+                                                    "removes": [
+                                                        {
+                                                            "id": 33,
+                                                            "parentId": 24
+                                                        }
+                                                    ],
+                                                    "source": 0,
+                                                    "texts": []
+                                                },
+                                                "timestamp": 1704067204500,
+                                                "type": 3
+                                            },
+                                            {
+                                                "data": {
+                                                    "positions": [
+                                                        {
+                                                            "id": 16,
+                                                            "timeOffset": 0,
+                                                            "x": 20,
+                                                            "y": 30
+                                                        }
+                                                    ],
+                                                    "source": 1
+                                                },
+                                                "timestamp": 1704067204600,
+                                                "type": 3
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": 16,
+                                                    "source": 2,
+                                                    "type": 1,
+                                                    "x": 20,
+                                                    "y": 30
+                                                },
+                                                "timestamp": 1704067204600,
+                                                "type": 3
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": 16,
+                                                    "source": 2,
+                                                    "type": 0,
+                                                    "x": 20,
+                                                    "y": 30
+                                                },
+                                                "timestamp": 1704067204600,
+                                                "type": 3
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": 16,
+                                                    "pointerType": 0,
+                                                    "source": 2,
+                                                    "type": 2,
+                                                    "x": 20,
+                                                    "y": 30
+                                                },
+                                                "timestamp": 1704067204600,
+                                                "type": 3
                                             }
                                         ],
                                         "$snapshot_host": "127.0.0.1",
@@ -132414,9 +132988,9 @@
                                         "distinct_id": "generated-id-1",
                                         "token": "phc_COMPAT"
                                     },
-                                    "sent_at": "2024-01-01T00:00:03.300Z",
-                                    "timestamp": "2024-01-01T00:00:03.300Z",
-                                    "uuid": "generated-id-13"
+                                    "sent_at": "2024-01-01T00:00:05.300Z",
+                                    "timestamp": "2024-01-01T00:00:05.300Z",
+                                    "uuid": "generated-id-14"
                                 },
                                 "contentEncoding": null,
                                 "contentType": "application/json",
@@ -132699,18 +133273,6 @@
                                         {
                                             "data": {
                                                 "payload": {
-                                                    "flag": "compat-variant",
-                                                    "reason": "linked_flag_matched",
-                                                    "variant": "blue"
-                                                },
-                                                "tag": "$recording_started"
-                                            },
-                                            "timestamp": 1704067201100,
-                                            "type": 5
-                                        },
-                                        {
-                                            "data": {
-                                                "payload": {
                                                     "cache_timestamp": 1704067201000,
                                                     "canvasRecording": {
                                                         "enabled": false
@@ -132719,7 +133281,7 @@
                                                     "enabled": true,
                                                     "endpoint": "/s/",
                                                     "linkedFlag": {
-                                                        "flag": "compat-variant",
+                                                        "flag": "compat-replay-variant",
                                                         "variant": "blue"
                                                     },
                                                     "minimumDurationMilliseconds": null,
@@ -132863,16 +133425,6 @@
                                             "type": 5
                                         },
                                         {
-                                            "data": {
-                                                "payload": {
-                                                    "reason": "recording_initialized"
-                                                },
-                                                "tag": "$recording_started"
-                                            },
-                                            "timestamp": 1704067201100,
-                                            "type": 5
-                                        },
-                                        {
                                             "cv": "2024-10",
                                             "data": {
                                                 "adds": [
@@ -132880,7 +133432,7 @@
                                                         "nextId": null,
                                                         "node": {
                                                             "id": 33,
-                                                            "textContent": "Flag enabled",
+                                                            "textContent": "Before trigger",
                                                             "type": 3
                                                         },
                                                         "parentId": 24
@@ -132947,6 +133499,94 @@
                                             },
                                             "timestamp": 1704067201300,
                                             "type": 3
+                                        },
+                                        {
+                                            "data": {
+                                                "payload": {
+                                                    "flag": "compat-replay-variant",
+                                                    "reason": "linked_flag_matched",
+                                                    "variant": "blue"
+                                                },
+                                                "tag": "$recording_started"
+                                            },
+                                            "timestamp": 1704067204500,
+                                            "type": 5
+                                        },
+                                        {
+                                            "cv": "2024-10",
+                                            "data": {
+                                                "adds": [
+                                                    {
+                                                        "nextId": null,
+                                                        "node": {
+                                                            "id": 34,
+                                                            "textContent": "After trigger",
+                                                            "type": 3
+                                                        },
+                                                        "parentId": 24
+                                                    }
+                                                ],
+                                                "attributes": [],
+                                                "removes": [
+                                                    {
+                                                        "id": 33,
+                                                        "parentId": 24
+                                                    }
+                                                ],
+                                                "source": 0,
+                                                "texts": []
+                                            },
+                                            "timestamp": 1704067204500,
+                                            "type": 3
+                                        },
+                                        {
+                                            "data": {
+                                                "positions": [
+                                                    {
+                                                        "id": 16,
+                                                        "timeOffset": 0,
+                                                        "x": 20,
+                                                        "y": 30
+                                                    }
+                                                ],
+                                                "source": 1
+                                            },
+                                            "timestamp": 1704067204600,
+                                            "type": 3
+                                        },
+                                        {
+                                            "data": {
+                                                "id": 16,
+                                                "source": 2,
+                                                "type": 1,
+                                                "x": 20,
+                                                "y": 30
+                                            },
+                                            "timestamp": 1704067204600,
+                                            "type": 3
+                                        },
+                                        {
+                                            "data": {
+                                                "id": 16,
+                                                "source": 2,
+                                                "type": 0,
+                                                "x": 20,
+                                                "y": 30
+                                            },
+                                            "timestamp": 1704067204600,
+                                            "type": 3
+                                        },
+                                        {
+                                            "data": {
+                                                "id": 16,
+                                                "pointerType": 0,
+                                                "source": 2,
+                                                "type": 2,
+                                                "x": 20,
+                                                "y": 30
+                                            },
+                                            "timestamp": 1704067204600,
+                                            "type": 3
                                         }
                                     ],
                                     "$snapshot_host": "127.0.0.1",
@@ -132954,15 +133594,19 @@
                                     "distinct_id": "generated-id-1",
                                     "token": "phc_COMPAT"
                                 },
-                                "sent_at": "2024-01-01T00:00:03.300Z",
-                                "timestamp": "2024-01-01T00:00:03.300Z",
-                                "uuid": "generated-id-13"
+                                "sent_at": "2024-01-01T00:00:05.300Z",
+                                "timestamp": "2024-01-01T00:00:05.300Z",
+                                "uuid": "generated-id-14"
                             }
                         ]
                     },
                     "pageErrors": [],
                     "replay": {
-                        "statusAfterStart": "active"
+                        "beforeTriggerSnapshots": 0,
+                        "statusAfterStart": "active",
+                        "statusBeforeTrigger": "buffering",
+                        "variantAfterTrigger": "blue",
+                        "variantBeforeTrigger": "red"
                     },
                     "ui": {},
                     "unexpectedNetwork": []
@@ -144383,7 +145027,7 @@
                                     "$logs_capture_enabled_server_side": false,
                                     "$minimal_flag_called_events": false,
                                     "$sesid": [
-                                        1704067210900,
+                                        1704067211000,
                                         "generated-id-2",
                                         1704067201000
                                     ],
@@ -145758,10 +146402,10 @@
                                             {
                                                 "data": {
                                                     "height": 768,
-                                                    "href": "<fixture-origin>/?compat-url-trigger",
+                                                    "href": "<fixture-origin>/?compat-url-resumed",
                                                     "width": 1024
                                                 },
-                                                "timestamp": 1704067210800,
+                                                "timestamp": 1704067210900,
                                                 "type": 4
                                             },
                                             {
@@ -145915,7 +146559,7 @@
                                                                                         },
                                                                                         "childNodes": [
                                                                                             {
-                                                                                                "id": 36,
+                                                                                                "id": 37,
                                                                                                 "textContent": "After blocked URL",
                                                                                                 "type": 3
                                                                                             }
@@ -145996,7 +146640,7 @@
                                                         "type": 0
                                                     }
                                                 },
-                                                "timestamp": 1704067210800,
+                                                "timestamp": 1704067210900,
                                                 "type": 2
                                             },
                                             {
@@ -146006,17 +146650,17 @@
                                                     },
                                                     "tag": "recording resumed"
                                                 },
-                                                "timestamp": 1704067210800,
+                                                "timestamp": 1704067210900,
                                                 "type": 5
                                             },
                                             {
                                                 "data": {
                                                     "payload": {
-                                                        "href": "<fixture-origin>/?compat-url-trigger"
+                                                        "href": "<fixture-origin>/?compat-url-resumed"
                                                     },
                                                     "tag": "$url_changed"
                                                 },
-                                                "timestamp": 1704067210800,
+                                                "timestamp": 1704067210900,
                                                 "type": 5
                                             },
                                             {
@@ -146026,7 +146670,7 @@
                                                         {
                                                             "nextId": null,
                                                             "node": {
-                                                                "id": 36,
+                                                                "id": 37,
                                                                 "textContent": "After blocked URL",
                                                                 "type": 3
                                                             },
@@ -146036,14 +146680,14 @@
                                                     "attributes": [],
                                                     "removes": [
                                                         {
-                                                            "id": 35,
+                                                            "id": 36,
                                                             "parentId": 24
                                                         }
                                                     ],
                                                     "source": 0,
                                                     "texts": []
                                                 },
-                                                "timestamp": 1704067210800,
+                                                "timestamp": 1704067210900,
                                                 "type": 3
                                             },
                                             {
@@ -146058,7 +146702,7 @@
                                                     ],
                                                     "source": 1
                                                 },
-                                                "timestamp": 1704067210900,
+                                                "timestamp": 1704067211000,
                                                 "type": 3
                                             },
                                             {
@@ -146069,7 +146713,7 @@
                                                     "x": 20,
                                                     "y": 30
                                                 },
-                                                "timestamp": 1704067210900,
+                                                "timestamp": 1704067211000,
                                                 "type": 3
                                             },
                                             {
@@ -146080,7 +146724,7 @@
                                                     "x": 20,
                                                     "y": 30
                                                 },
-                                                "timestamp": 1704067210900,
+                                                "timestamp": 1704067211000,
                                                 "type": 3
                                             },
                                             {
@@ -146092,7 +146736,7 @@
                                                     "x": 20,
                                                     "y": 30
                                                 },
-                                                "timestamp": 1704067210900,
+                                                "timestamp": 1704067211000,
                                                 "type": 3
                                             }
                                         ],
@@ -146769,10 +147413,10 @@
                                         {
                                             "data": {
                                                 "height": 768,
-                                                "href": "<fixture-origin>/?compat-url-trigger",
+                                                "href": "<fixture-origin>/?compat-url-resumed",
                                                 "width": 1024
                                             },
-                                            "timestamp": 1704067210800,
+                                            "timestamp": 1704067210900,
                                             "type": 4
                                         },
                                         {
@@ -146926,7 +147570,7 @@
                                                                                     },
                                                                                     "childNodes": [
                                                                                         {
-                                                                                            "id": 36,
+                                                                                            "id": 37,
                                                                                             "textContent": "After blocked URL",
                                                                                             "type": 3
                                                                                         }
@@ -147007,7 +147651,7 @@
                                                     "type": 0
                                                 }
                                             },
-                                            "timestamp": 1704067210800,
+                                            "timestamp": 1704067210900,
                                             "type": 2
                                         },
                                         {
@@ -147017,17 +147661,17 @@
                                                 },
                                                 "tag": "recording resumed"
                                             },
-                                            "timestamp": 1704067210800,
+                                            "timestamp": 1704067210900,
                                             "type": 5
                                         },
                                         {
                                             "data": {
                                                 "payload": {
-                                                    "href": "<fixture-origin>/?compat-url-trigger"
+                                                    "href": "<fixture-origin>/?compat-url-resumed"
                                                 },
                                                 "tag": "$url_changed"
                                             },
-                                            "timestamp": 1704067210800,
+                                            "timestamp": 1704067210900,
                                             "type": 5
                                         },
                                         {
@@ -147037,7 +147681,7 @@
                                                     {
                                                         "nextId": null,
                                                         "node": {
-                                                            "id": 36,
+                                                            "id": 37,
                                                             "textContent": "After blocked URL",
                                                             "type": 3
                                                         },
@@ -147047,14 +147691,14 @@
                                                 "attributes": [],
                                                 "removes": [
                                                     {
-                                                        "id": 35,
+                                                        "id": 36,
                                                         "parentId": 24
                                                     }
                                                 ],
                                                 "source": 0,
                                                 "texts": []
                                             },
-                                            "timestamp": 1704067210800,
+                                            "timestamp": 1704067210900,
                                             "type": 3
                                         },
                                         {
@@ -147069,7 +147713,7 @@
                                                 ],
                                                 "source": 1
                                             },
-                                            "timestamp": 1704067210900,
+                                            "timestamp": 1704067211000,
                                             "type": 3
                                         },
                                         {
@@ -147080,7 +147724,7 @@
                                                 "x": 20,
                                                 "y": 30
                                             },
-                                            "timestamp": 1704067210900,
+                                            "timestamp": 1704067211000,
                                             "type": 3
                                         },
                                         {
@@ -147091,7 +147735,7 @@
                                                 "x": 20,
                                                 "y": 30
                                             },
-                                            "timestamp": 1704067210900,
+                                            "timestamp": 1704067211000,
                                             "type": 3
                                         },
                                         {
@@ -147103,7 +147747,7 @@
                                                 "x": 20,
                                                 "y": 30
                                             },
-                                            "timestamp": 1704067210900,
+                                            "timestamp": 1704067211000,
                                             "type": 3
                                         }
                                     ],
@@ -214125,10 +214769,12 @@
                                 "values": [
                                     [
                                         "compat-enabled",
-                                        "compat-variant"
+                                        "compat-variant",
+                                        "compat-replay-variant"
                                     ],
                                     {
                                         "compat-enabled": true,
+                                        "compat-replay-variant": "red",
                                         "compat-variant": "blue"
                                     },
                                     {
@@ -214143,10 +214789,12 @@
                                 "values": [
                                     [
                                         "compat-enabled",
-                                        "compat-variant"
+                                        "compat-variant",
+                                        "compat-replay-variant"
                                     ],
                                     {
                                         "compat-enabled": true,
+                                        "compat-replay-variant": "red",
                                         "compat-variant": "blue"
                                     },
                                     {
@@ -214161,10 +214809,12 @@
                                 "values": [
                                     [
                                         "compat-enabled",
-                                        "compat-variant"
+                                        "compat-variant",
+                                        "compat-replay-variant"
                                     ],
                                     {
                                         "compat-enabled": true,
+                                        "compat-replay-variant": "red",
                                         "compat-variant": "blue"
                                     },
                                     {
@@ -214179,10 +214829,12 @@
                                 "values": [
                                     [
                                         "compat-enabled",
-                                        "compat-variant"
+                                        "compat-variant",
+                                        "compat-replay-variant"
                                     ],
                                     {
                                         "compat-enabled": true,
+                                        "compat-replay-variant": "red",
                                         "compat-variant": "blue"
                                     },
                                     {
@@ -214197,10 +214849,12 @@
                                 "values": [
                                     [
                                         "compat-enabled",
-                                        "compat-variant"
+                                        "compat-variant",
+                                        "compat-replay-variant"
                                     ],
                                     {
                                         "compat-enabled": true,
+                                        "compat-replay-variant": "red",
                                         "compat-variant": "blue"
                                     }
                                 ]
@@ -214211,6 +214865,106 @@
                                 "phase": "ready",
                                 "values": [
                                     []
+                                ]
+                            },
+                            {
+                                "callback": "feature-flags",
+                                "originPhase": "before-init",
+                                "phase": "ready",
+                                "values": [
+                                    [
+                                        "compat-enabled",
+                                        "compat-variant",
+                                        "compat-replay-variant"
+                                    ],
+                                    {
+                                        "compat-enabled": true,
+                                        "compat-replay-variant": "blue",
+                                        "compat-variant": "blue"
+                                    },
+                                    {
+                                        "errorsLoading": false
+                                    }
+                                ]
+                            },
+                            {
+                                "callback": "feature-flags",
+                                "originPhase": "loaded",
+                                "phase": "ready",
+                                "values": [
+                                    [
+                                        "compat-enabled",
+                                        "compat-variant",
+                                        "compat-replay-variant"
+                                    ],
+                                    {
+                                        "compat-enabled": true,
+                                        "compat-replay-variant": "blue",
+                                        "compat-variant": "blue"
+                                    },
+                                    {
+                                        "errorsLoading": false
+                                    }
+                                ]
+                            },
+                            {
+                                "callback": "feature-flags",
+                                "originPhase": "init-return",
+                                "phase": "ready",
+                                "values": [
+                                    [
+                                        "compat-enabled",
+                                        "compat-variant",
+                                        "compat-replay-variant"
+                                    ],
+                                    {
+                                        "compat-enabled": true,
+                                        "compat-replay-variant": "blue",
+                                        "compat-variant": "blue"
+                                    },
+                                    {
+                                        "errorsLoading": false
+                                    }
+                                ]
+                            },
+                            {
+                                "callback": "feature-flags",
+                                "originPhase": "pending",
+                                "phase": "ready",
+                                "values": [
+                                    [
+                                        "compat-enabled",
+                                        "compat-variant",
+                                        "compat-replay-variant"
+                                    ],
+                                    {
+                                        "compat-enabled": true,
+                                        "compat-replay-variant": "blue",
+                                        "compat-variant": "blue"
+                                    },
+                                    {
+                                        "errorsLoading": false
+                                    }
+                                ]
+                            },
+                            {
+                                "callback": "feature-flags",
+                                "originPhase": "ready",
+                                "phase": "ready",
+                                "values": [
+                                    [
+                                        "compat-enabled",
+                                        "compat-variant",
+                                        "compat-replay-variant"
+                                    ],
+                                    {
+                                        "compat-enabled": true,
+                                        "compat-replay-variant": "blue",
+                                        "compat-variant": "blue"
+                                    },
+                                    {
+                                        "errorsLoading": false
+                                    }
                                 ]
                             }
                         ],
@@ -214768,7 +215522,8 @@
                                     "properties": {
                                         "$active_feature_flags": [
                                             "compat-enabled",
-                                            "compat-variant"
+                                            "compat-variant",
+                                            "compat-replay-variant"
                                         ],
                                         "$autocapture_disabled_server_side": false,
                                         "$browser": "Safari",
@@ -214784,8 +215539,10 @@
                                         "$device_id": "generated-id-1",
                                         "$device_type": "Desktop",
                                         "$feature/compat-enabled": true,
+                                        "$feature/compat-replay-variant": "red",
                                         "$feature/compat-variant": "blue",
                                         "$feature_flag_payloads": {
+                                            "compat-replay-variant": "\"red\"",
                                             "compat-variant": "\"blue\""
                                         },
                                         "$feature_flag_request_id": "generated-id-10",
@@ -214802,7 +215559,7 @@
                                         "$pathname": "/",
                                         "$process_person_profile": false,
                                         "$raw_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.4 Safari/605.1.15",
-                                        "$recording_status": "active",
+                                        "$recording_status": "buffering",
                                         "$referrer": "$direct",
                                         "$referring_domain": "$direct",
                                         "$screen_height": 768,
@@ -214812,7 +215569,7 @@
                                         "$sdk_debug_replay_event_trigger_status": "trigger_disabled",
                                         "$sdk_debug_replay_flushed_size": "<encoded-size>",
                                         "$sdk_debug_replay_internal_buffer_length": "<buffer-count>",
-                                        "$sdk_debug_replay_linked_flag_trigger_status": "trigger_activated",
+                                        "$sdk_debug_replay_linked_flag_trigger_status": "trigger_pending",
                                         "$sdk_debug_replay_rrweb_error": false,
                                         "$sdk_debug_replay_url_trigger_status": "trigger_disabled",
                                         "$sdk_debug_retry_queue_size": 0,
@@ -214823,7 +215580,6 @@
                                         "$session_entry_referring_domain": "$direct",
                                         "$session_entry_url": "<fixture-origin>/",
                                         "$session_id": "generated-id-2",
-                                        "$session_recording_start_reason": "recording_initialized",
                                         "$time": 1704067201.1,
                                         "$timezone": "UTC",
                                         "$timezone_offset": 0,
@@ -214850,6 +215606,13 @@
                                         "value": "2024-01-01T00:00:01.100Z"
                                     },
                                     "uuid": "generated-id-12"
+                                }
+                            },
+                            {
+                                "method": "reloadFeatureFlags",
+                                "phase": "ready",
+                                "returned": {
+                                    "$kind": "undefined"
                                 }
                             },
                             {
@@ -214914,7 +215677,8 @@
                                 "ph_phc_COMPAT_posthog": {
                                     "$active_feature_flags": [
                                         "compat-enabled",
-                                        "compat-variant"
+                                        "compat-variant",
+                                        "compat-replay-variant"
                                     ],
                                     "$autocapture_disabled_server_side": false,
                                     "$capture_rate_limit": {
@@ -214934,6 +215698,7 @@
                                     "$device_id": "generated-id-1",
                                     "$enabled_feature_flags": {
                                         "compat-enabled": true,
+                                        "compat-replay-variant": "blue",
                                         "compat-variant": "blue"
                                     },
                                     "$error_tracking_suppression_rules": [],
@@ -214941,9 +215706,10 @@
                                     "$feature_flag_errors": [],
                                     "$feature_flag_evaluated_at": 1704067200,
                                     "$feature_flag_payloads": {
+                                        "compat-replay-variant": "\"blue\"",
                                         "compat-variant": "\"blue\""
                                     },
-                                    "$feature_flag_request_id": "generated-id-10",
+                                    "$feature_flag_request_id": "generated-id-13",
                                     "$heatmaps_enabled_server_side": false,
                                     "$initial_person_info": {
                                         "r": "$direct",
@@ -214970,7 +215736,7 @@
                                         "enabled": true,
                                         "endpoint": "/s/",
                                         "linkedFlag": {
-                                            "flag": "compat-variant",
+                                            "flag": "compat-replay-variant",
                                             "variant": "blue"
                                         },
                                         "minimumDurationMilliseconds": null,
@@ -214994,18 +215760,20 @@
                                     "$sdk_debug_extensions_init_time_ms": "<cpu-duration-ms>",
                                     "$sdk_debug_replay_event_trigger_status": "trigger_disabled",
                                     "$sdk_debug_replay_linked_flag_trigger_status": "trigger_activated",
+                                    "$sdk_debug_replay_pending_trigger_conditions": [],
                                     "$sdk_debug_replay_url_trigger_status": "trigger_disabled",
-                                    "$session_recording_start_reason": "recording_initialized"
+                                    "$session_recording_start_reason": "linked_flag_matched"
                                 },
                                 "ph_phc_COMPAT_primary_window_exists": "true",
                                 "ph_phc_COMPAT_session_registered_properties": [
                                     "$sdk_debug_extensions_init_method",
                                     "$sdk_debug_extensions_init_time_ms",
                                     "$sdk_debug_replay_remote_trigger_matching_config",
-                                    "$session_recording_start_reason",
                                     "$sdk_debug_replay_event_trigger_status",
                                     "$sdk_debug_replay_url_trigger_status",
-                                    "$sdk_debug_replay_linked_flag_trigger_status"
+                                    "$sdk_debug_replay_linked_flag_trigger_status",
+                                    "$sdk_debug_replay_pending_trigger_conditions",
+                                    "$session_recording_start_reason"
                                 ],
                                 "ph_phc_COMPAT_window_id": "generated-id-4"
                             }
@@ -215204,7 +215972,8 @@
                                 "properties": {
                                     "$active_feature_flags": [
                                         "compat-enabled",
-                                        "compat-variant"
+                                        "compat-variant",
+                                        "compat-replay-variant"
                                     ],
                                     "$autocapture_disabled_server_side": false,
                                     "$browser": "Safari",
@@ -215220,8 +215989,10 @@
                                     "$device_id": "generated-id-1",
                                     "$device_type": "Desktop",
                                     "$feature/compat-enabled": true,
+                                    "$feature/compat-replay-variant": "red",
                                     "$feature/compat-variant": "blue",
                                     "$feature_flag_payloads": {
+                                        "compat-replay-variant": "\"red\"",
                                         "compat-variant": "\"blue\""
                                     },
                                     "$feature_flag_request_id": "generated-id-10",
@@ -215238,7 +216009,7 @@
                                     "$pathname": "/",
                                     "$process_person_profile": false,
                                     "$raw_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.4 Safari/605.1.15",
-                                    "$recording_status": "active",
+                                    "$recording_status": "buffering",
                                     "$referrer": "$direct",
                                     "$referring_domain": "$direct",
                                     "$screen_height": 768,
@@ -215248,7 +216019,7 @@
                                     "$sdk_debug_replay_event_trigger_status": "trigger_disabled",
                                     "$sdk_debug_replay_flushed_size": "<encoded-size>",
                                     "$sdk_debug_replay_internal_buffer_length": "<buffer-count>",
-                                    "$sdk_debug_replay_linked_flag_trigger_status": "trigger_activated",
+                                    "$sdk_debug_replay_linked_flag_trigger_status": "trigger_pending",
                                     "$sdk_debug_replay_rrweb_error": false,
                                     "$sdk_debug_replay_url_trigger_status": "trigger_disabled",
                                     "$sdk_debug_retry_queue_size": 0,
@@ -215259,7 +216030,6 @@
                                     "$session_entry_referring_domain": "$direct",
                                     "$session_entry_url": "<fixture-origin>/",
                                     "$session_id": "generated-id-2",
-                                    "$session_recording_start_reason": "recording_initialized",
                                     "$time": 1704067201.1,
                                     "$timezone": "UTC",
                                     "$timezone_offset": 0,
@@ -215325,6 +216095,64 @@
                                         "$lib_version": "<core-version>"
                                     },
                                     "sent_at": "2024-01-01T00:00:01.005Z",
+                                    "timezone": "UTC",
+                                    "token": "phc_COMPAT"
+                                },
+                                "contentEncoding": null,
+                                "contentType": "application/x-www-form-urlencoded",
+                                "method": "POST",
+                                "path": "/flags",
+                                "query": {
+                                    "compression": [
+                                        "base64"
+                                    ],
+                                    "v": [
+                                        "2"
+                                    ]
+                                },
+                                "status": 200
+                            },
+                            {
+                                "body": {
+                                    "$device_id": "generated-id-1",
+                                    "distinct_id": "generated-id-1",
+                                    "groups": {},
+                                    "person_properties": {
+                                        "$initial__kx": null,
+                                        "$initial_bfcid": null,
+                                        "$initial_current_url": "<fixture-origin>/",
+                                        "$initial_dclid": null,
+                                        "$initial_epik": null,
+                                        "$initial_fbclid": null,
+                                        "$initial_gad_source": null,
+                                        "$initial_gbraid": null,
+                                        "$initial_gclid": null,
+                                        "$initial_gclsrc": null,
+                                        "$initial_host": "<fixture-host>",
+                                        "$initial_igshid": null,
+                                        "$initial_irclid": null,
+                                        "$initial_li_fat_id": null,
+                                        "$initial_mc_cid": null,
+                                        "$initial_msclkid": null,
+                                        "$initial_oppref": null,
+                                        "$initial_pathname": "/",
+                                        "$initial_qclid": null,
+                                        "$initial_rdt_cid": null,
+                                        "$initial_referrer": "$direct",
+                                        "$initial_referring_domain": "$direct",
+                                        "$initial_sccid": null,
+                                        "$initial_ttclid": null,
+                                        "$initial_twclid": null,
+                                        "$initial_utm_campaign": null,
+                                        "$initial_utm_content": null,
+                                        "$initial_utm_medium": null,
+                                        "$initial_utm_source": null,
+                                        "$initial_utm_term": null,
+                                        "$initial_wbraid": null,
+                                        "$lib": "web",
+                                        "$lib_version": "<core-version>"
+                                    },
+                                    "sent_at": "2024-01-01T00:00:04.405Z",
                                     "timezone": "UTC",
                                     "token": "phc_COMPAT"
                                 },
@@ -215576,7 +216404,8 @@
                                             "properties": {
                                                 "$active_feature_flags": [
                                                     "compat-enabled",
-                                                    "compat-variant"
+                                                    "compat-variant",
+                                                    "compat-replay-variant"
                                                 ],
                                                 "$autocapture_disabled_server_side": false,
                                                 "$browser": "Safari",
@@ -215592,8 +216421,10 @@
                                                 "$device_id": "generated-id-1",
                                                 "$device_type": "Desktop",
                                                 "$feature/compat-enabled": true,
+                                                "$feature/compat-replay-variant": "red",
                                                 "$feature/compat-variant": "blue",
                                                 "$feature_flag_payloads": {
+                                                    "compat-replay-variant": "\"red\"",
                                                     "compat-variant": "\"blue\""
                                                 },
                                                 "$feature_flag_request_id": "generated-id-10",
@@ -215610,7 +216441,7 @@
                                                 "$pathname": "/",
                                                 "$process_person_profile": false,
                                                 "$raw_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.4 Safari/605.1.15",
-                                                "$recording_status": "active",
+                                                "$recording_status": "buffering",
                                                 "$referrer": "$direct",
                                                 "$referring_domain": "$direct",
                                                 "$screen_height": 768,
@@ -215620,7 +216451,7 @@
                                                 "$sdk_debug_replay_event_trigger_status": "trigger_disabled",
                                                 "$sdk_debug_replay_flushed_size": "<encoded-size>",
                                                 "$sdk_debug_replay_internal_buffer_length": "<buffer-count>",
-                                                "$sdk_debug_replay_linked_flag_trigger_status": "trigger_activated",
+                                                "$sdk_debug_replay_linked_flag_trigger_status": "trigger_pending",
                                                 "$sdk_debug_replay_rrweb_error": false,
                                                 "$sdk_debug_replay_url_trigger_status": "trigger_disabled",
                                                 "$sdk_debug_retry_queue_size": 0,
@@ -215631,7 +216462,6 @@
                                                 "$session_entry_referring_domain": "$direct",
                                                 "$session_entry_url": "<fixture-origin>/",
                                                 "$session_id": "generated-id-2",
-                                                "$session_recording_start_reason": "recording_initialized",
                                                 "$time": 1704067201.1,
                                                 "$timezone": "UTC",
                                                 "$timezone_offset": 0,
@@ -215920,18 +216750,6 @@
                                             {
                                                 "data": {
                                                     "payload": {
-                                                        "flag": "compat-variant",
-                                                        "reason": "linked_flag_matched",
-                                                        "variant": "blue"
-                                                    },
-                                                    "tag": "$recording_started"
-                                                },
-                                                "timestamp": 1704067201100,
-                                                "type": 5
-                                            },
-                                            {
-                                                "data": {
-                                                    "payload": {
                                                         "cache_timestamp": 1704067201000,
                                                         "canvasRecording": {
                                                             "enabled": false
@@ -215940,7 +216758,7 @@
                                                         "enabled": true,
                                                         "endpoint": "/s/",
                                                         "linkedFlag": {
-                                                            "flag": "compat-variant",
+                                                            "flag": "compat-replay-variant",
                                                             "variant": "blue"
                                                         },
                                                         "minimumDurationMilliseconds": null,
@@ -216084,16 +216902,6 @@
                                                 "type": 5
                                             },
                                             {
-                                                "data": {
-                                                    "payload": {
-                                                        "reason": "recording_initialized"
-                                                    },
-                                                    "tag": "$recording_started"
-                                                },
-                                                "timestamp": 1704067201100,
-                                                "type": 5
-                                            },
-                                            {
                                                 "cv": "2024-10",
                                                 "data": {
                                                     "adds": [
@@ -216101,7 +216909,7 @@
                                                             "nextId": null,
                                                             "node": {
                                                                 "id": 33,
-                                                                "textContent": "Flag enabled",
+                                                                "textContent": "Before trigger",
                                                                 "type": 3
                                                             },
                                                             "parentId": 24
@@ -216168,6 +216976,94 @@
                                                 },
                                                 "timestamp": 1704067201300,
                                                 "type": 3
+                                            },
+                                            {
+                                                "data": {
+                                                    "payload": {
+                                                        "flag": "compat-replay-variant",
+                                                        "reason": "linked_flag_matched",
+                                                        "variant": "blue"
+                                                    },
+                                                    "tag": "$recording_started"
+                                                },
+                                                "timestamp": 1704067204500,
+                                                "type": 5
+                                            },
+                                            {
+                                                "cv": "2024-10",
+                                                "data": {
+                                                    "adds": [
+                                                        {
+                                                            "nextId": null,
+                                                            "node": {
+                                                                "id": 34,
+                                                                "textContent": "After trigger",
+                                                                "type": 3
+                                                            },
+                                                            "parentId": 24
+                                                        }
+                                                    ],
+                                                    "attributes": [],
+                                                    "removes": [
+                                                        {
+                                                            "id": 33,
+                                                            "parentId": 24
+                                                        }
+                                                    ],
+                                                    "source": 0,
+                                                    "texts": []
+                                                },
+                                                "timestamp": 1704067204500,
+                                                "type": 3
+                                            },
+                                            {
+                                                "data": {
+                                                    "positions": [
+                                                        {
+                                                            "id": 16,
+                                                            "timeOffset": 0,
+                                                            "x": 20,
+                                                            "y": 30
+                                                        }
+                                                    ],
+                                                    "source": 1
+                                                },
+                                                "timestamp": 1704067204600,
+                                                "type": 3
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": 16,
+                                                    "source": 2,
+                                                    "type": 1,
+                                                    "x": 20,
+                                                    "y": 30
+                                                },
+                                                "timestamp": 1704067204600,
+                                                "type": 3
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": 16,
+                                                    "source": 2,
+                                                    "type": 0,
+                                                    "x": 20,
+                                                    "y": 30
+                                                },
+                                                "timestamp": 1704067204600,
+                                                "type": 3
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": 16,
+                                                    "pointerType": 0,
+                                                    "source": 2,
+                                                    "type": 2,
+                                                    "x": 20,
+                                                    "y": 30
+                                                },
+                                                "timestamp": 1704067204600,
+                                                "type": 3
                                             }
                                         ],
                                         "$snapshot_host": "127.0.0.1",
@@ -216175,9 +217071,9 @@
                                         "distinct_id": "generated-id-1",
                                         "token": "phc_COMPAT"
                                     },
-                                    "sent_at": "2024-01-01T00:00:03.300Z",
-                                    "timestamp": "2024-01-01T00:00:03.300Z",
-                                    "uuid": "generated-id-13"
+                                    "sent_at": "2024-01-01T00:00:05.300Z",
+                                    "timestamp": "2024-01-01T00:00:05.300Z",
+                                    "uuid": "generated-id-14"
                                 },
                                 "contentEncoding": null,
                                 "contentType": "application/json",
@@ -216460,18 +217356,6 @@
                                         {
                                             "data": {
                                                 "payload": {
-                                                    "flag": "compat-variant",
-                                                    "reason": "linked_flag_matched",
-                                                    "variant": "blue"
-                                                },
-                                                "tag": "$recording_started"
-                                            },
-                                            "timestamp": 1704067201100,
-                                            "type": 5
-                                        },
-                                        {
-                                            "data": {
-                                                "payload": {
                                                     "cache_timestamp": 1704067201000,
                                                     "canvasRecording": {
                                                         "enabled": false
@@ -216480,7 +217364,7 @@
                                                     "enabled": true,
                                                     "endpoint": "/s/",
                                                     "linkedFlag": {
-                                                        "flag": "compat-variant",
+                                                        "flag": "compat-replay-variant",
                                                         "variant": "blue"
                                                     },
                                                     "minimumDurationMilliseconds": null,
@@ -216624,16 +217508,6 @@
                                             "type": 5
                                         },
                                         {
-                                            "data": {
-                                                "payload": {
-                                                    "reason": "recording_initialized"
-                                                },
-                                                "tag": "$recording_started"
-                                            },
-                                            "timestamp": 1704067201100,
-                                            "type": 5
-                                        },
-                                        {
                                             "cv": "2024-10",
                                             "data": {
                                                 "adds": [
@@ -216641,7 +217515,7 @@
                                                         "nextId": null,
                                                         "node": {
                                                             "id": 33,
-                                                            "textContent": "Flag enabled",
+                                                            "textContent": "Before trigger",
                                                             "type": 3
                                                         },
                                                         "parentId": 24
@@ -216708,6 +217582,94 @@
                                             },
                                             "timestamp": 1704067201300,
                                             "type": 3
+                                        },
+                                        {
+                                            "data": {
+                                                "payload": {
+                                                    "flag": "compat-replay-variant",
+                                                    "reason": "linked_flag_matched",
+                                                    "variant": "blue"
+                                                },
+                                                "tag": "$recording_started"
+                                            },
+                                            "timestamp": 1704067204500,
+                                            "type": 5
+                                        },
+                                        {
+                                            "cv": "2024-10",
+                                            "data": {
+                                                "adds": [
+                                                    {
+                                                        "nextId": null,
+                                                        "node": {
+                                                            "id": 34,
+                                                            "textContent": "After trigger",
+                                                            "type": 3
+                                                        },
+                                                        "parentId": 24
+                                                    }
+                                                ],
+                                                "attributes": [],
+                                                "removes": [
+                                                    {
+                                                        "id": 33,
+                                                        "parentId": 24
+                                                    }
+                                                ],
+                                                "source": 0,
+                                                "texts": []
+                                            },
+                                            "timestamp": 1704067204500,
+                                            "type": 3
+                                        },
+                                        {
+                                            "data": {
+                                                "positions": [
+                                                    {
+                                                        "id": 16,
+                                                        "timeOffset": 0,
+                                                        "x": 20,
+                                                        "y": 30
+                                                    }
+                                                ],
+                                                "source": 1
+                                            },
+                                            "timestamp": 1704067204600,
+                                            "type": 3
+                                        },
+                                        {
+                                            "data": {
+                                                "id": 16,
+                                                "source": 2,
+                                                "type": 1,
+                                                "x": 20,
+                                                "y": 30
+                                            },
+                                            "timestamp": 1704067204600,
+                                            "type": 3
+                                        },
+                                        {
+                                            "data": {
+                                                "id": 16,
+                                                "source": 2,
+                                                "type": 0,
+                                                "x": 20,
+                                                "y": 30
+                                            },
+                                            "timestamp": 1704067204600,
+                                            "type": 3
+                                        },
+                                        {
+                                            "data": {
+                                                "id": 16,
+                                                "pointerType": 0,
+                                                "source": 2,
+                                                "type": 2,
+                                                "x": 20,
+                                                "y": 30
+                                            },
+                                            "timestamp": 1704067204600,
+                                            "type": 3
                                         }
                                     ],
                                     "$snapshot_host": "127.0.0.1",
@@ -216715,15 +217677,19 @@
                                     "distinct_id": "generated-id-1",
                                     "token": "phc_COMPAT"
                                 },
-                                "sent_at": "2024-01-01T00:00:03.300Z",
-                                "timestamp": "2024-01-01T00:00:03.300Z",
-                                "uuid": "generated-id-13"
+                                "sent_at": "2024-01-01T00:00:05.300Z",
+                                "timestamp": "2024-01-01T00:00:05.300Z",
+                                "uuid": "generated-id-14"
                             }
                         ]
                     },
                     "pageErrors": [],
                     "replay": {
-                        "statusAfterStart": "active"
+                        "beforeTriggerSnapshots": 0,
+                        "statusAfterStart": "active",
+                        "statusBeforeTrigger": "buffering",
+                        "variantAfterTrigger": "blue",
+                        "variantBeforeTrigger": "red"
                     },
                     "ui": {},
                     "unexpectedNetwork": []
@@ -228144,7 +229110,7 @@
                                     "$logs_capture_enabled_server_side": false,
                                     "$minimal_flag_called_events": false,
                                     "$sesid": [
-                                        1704067210900,
+                                        1704067211000,
                                         "generated-id-2",
                                         1704067201000
                                     ],
@@ -229519,10 +230485,10 @@
                                             {
                                                 "data": {
                                                     "height": 768,
-                                                    "href": "<fixture-origin>/?compat-url-trigger",
+                                                    "href": "<fixture-origin>/?compat-url-resumed",
                                                     "width": 1024
                                                 },
-                                                "timestamp": 1704067210800,
+                                                "timestamp": 1704067210900,
                                                 "type": 4
                                             },
                                             {
@@ -229676,7 +230642,7 @@
                                                                                         },
                                                                                         "childNodes": [
                                                                                             {
-                                                                                                "id": 36,
+                                                                                                "id": 37,
                                                                                                 "textContent": "After blocked URL",
                                                                                                 "type": 3
                                                                                             }
@@ -229757,7 +230723,7 @@
                                                         "type": 0
                                                     }
                                                 },
-                                                "timestamp": 1704067210800,
+                                                "timestamp": 1704067210900,
                                                 "type": 2
                                             },
                                             {
@@ -229767,17 +230733,17 @@
                                                     },
                                                     "tag": "recording resumed"
                                                 },
-                                                "timestamp": 1704067210800,
+                                                "timestamp": 1704067210900,
                                                 "type": 5
                                             },
                                             {
                                                 "data": {
                                                     "payload": {
-                                                        "href": "<fixture-origin>/?compat-url-trigger"
+                                                        "href": "<fixture-origin>/?compat-url-resumed"
                                                     },
                                                     "tag": "$url_changed"
                                                 },
-                                                "timestamp": 1704067210800,
+                                                "timestamp": 1704067210900,
                                                 "type": 5
                                             },
                                             {
@@ -229787,7 +230753,7 @@
                                                         {
                                                             "nextId": null,
                                                             "node": {
-                                                                "id": 36,
+                                                                "id": 37,
                                                                 "textContent": "After blocked URL",
                                                                 "type": 3
                                                             },
@@ -229797,14 +230763,14 @@
                                                     "attributes": [],
                                                     "removes": [
                                                         {
-                                                            "id": 35,
+                                                            "id": 36,
                                                             "parentId": 24
                                                         }
                                                     ],
                                                     "source": 0,
                                                     "texts": []
                                                 },
-                                                "timestamp": 1704067210800,
+                                                "timestamp": 1704067210900,
                                                 "type": 3
                                             },
                                             {
@@ -229819,7 +230785,7 @@
                                                     ],
                                                     "source": 1
                                                 },
-                                                "timestamp": 1704067210900,
+                                                "timestamp": 1704067211000,
                                                 "type": 3
                                             },
                                             {
@@ -229830,7 +230796,7 @@
                                                     "x": 20,
                                                     "y": 30
                                                 },
-                                                "timestamp": 1704067210900,
+                                                "timestamp": 1704067211000,
                                                 "type": 3
                                             },
                                             {
@@ -229841,7 +230807,7 @@
                                                     "x": 20,
                                                     "y": 30
                                                 },
-                                                "timestamp": 1704067210900,
+                                                "timestamp": 1704067211000,
                                                 "type": 3
                                             },
                                             {
@@ -229853,7 +230819,7 @@
                                                     "x": 20,
                                                     "y": 30
                                                 },
-                                                "timestamp": 1704067210900,
+                                                "timestamp": 1704067211000,
                                                 "type": 3
                                             }
                                         ],
@@ -230530,10 +231496,10 @@
                                         {
                                             "data": {
                                                 "height": 768,
-                                                "href": "<fixture-origin>/?compat-url-trigger",
+                                                "href": "<fixture-origin>/?compat-url-resumed",
                                                 "width": 1024
                                             },
-                                            "timestamp": 1704067210800,
+                                            "timestamp": 1704067210900,
                                             "type": 4
                                         },
                                         {
@@ -230687,7 +231653,7 @@
                                                                                     },
                                                                                     "childNodes": [
                                                                                         {
-                                                                                            "id": 36,
+                                                                                            "id": 37,
                                                                                             "textContent": "After blocked URL",
                                                                                             "type": 3
                                                                                         }
@@ -230768,7 +231734,7 @@
                                                     "type": 0
                                                 }
                                             },
-                                            "timestamp": 1704067210800,
+                                            "timestamp": 1704067210900,
                                             "type": 2
                                         },
                                         {
@@ -230778,17 +231744,17 @@
                                                 },
                                                 "tag": "recording resumed"
                                             },
-                                            "timestamp": 1704067210800,
+                                            "timestamp": 1704067210900,
                                             "type": 5
                                         },
                                         {
                                             "data": {
                                                 "payload": {
-                                                    "href": "<fixture-origin>/?compat-url-trigger"
+                                                    "href": "<fixture-origin>/?compat-url-resumed"
                                                 },
                                                 "tag": "$url_changed"
                                             },
-                                            "timestamp": 1704067210800,
+                                            "timestamp": 1704067210900,
                                             "type": 5
                                         },
                                         {
@@ -230798,7 +231764,7 @@
                                                     {
                                                         "nextId": null,
                                                         "node": {
-                                                            "id": 36,
+                                                            "id": 37,
                                                             "textContent": "After blocked URL",
                                                             "type": 3
                                                         },
@@ -230808,14 +231774,14 @@
                                                 "attributes": [],
                                                 "removes": [
                                                     {
-                                                        "id": 35,
+                                                        "id": 36,
                                                         "parentId": 24
                                                     }
                                                 ],
                                                 "source": 0,
                                                 "texts": []
                                             },
-                                            "timestamp": 1704067210800,
+                                            "timestamp": 1704067210900,
                                             "type": 3
                                         },
                                         {
@@ -230830,7 +231796,7 @@
                                                 ],
                                                 "source": 1
                                             },
-                                            "timestamp": 1704067210900,
+                                            "timestamp": 1704067211000,
                                             "type": 3
                                         },
                                         {
@@ -230841,7 +231807,7 @@
                                                 "x": 20,
                                                 "y": 30
                                             },
-                                            "timestamp": 1704067210900,
+                                            "timestamp": 1704067211000,
                                             "type": 3
                                         },
                                         {
@@ -230852,7 +231818,7 @@
                                                 "x": 20,
                                                 "y": 30
                                             },
-                                            "timestamp": 1704067210900,
+                                            "timestamp": 1704067211000,
                                             "type": 3
                                         },
                                         {
@@ -230864,7 +231830,7 @@
                                                 "x": 20,
                                                 "y": 30
                                             },
-                                            "timestamp": 1704067210900,
+                                            "timestamp": 1704067211000,
                                             "type": 3
                                         }
                                     ],
