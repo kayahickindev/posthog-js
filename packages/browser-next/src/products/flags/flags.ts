@@ -197,7 +197,8 @@ export const flags = (options: FlagsOptions = {}): FeatureFlags => {
                         }
                     },
                     forceReload,
-                    stages
+                    stages,
+                    { ignoreFailedResponses: true }
                 )
             } catch (error) {
                 client?.logger.error('Early access feature listing failed', error)
